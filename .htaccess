@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^timthumb/(.*)/(.*)/(.*)$ /nadia/timthumb.php?w=$2&h=$3&src=$1 [L]
+RewriteCond $1 !^(index\.php|admin|images|timthumb\.php|smtp\.php)
+RewriteRule ^(.*)$ /nadia/index.php?$1 [L]
